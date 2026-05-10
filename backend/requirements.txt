@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+pillow
+torch
+torchvision
+sqlalchemy
+alembic
+passlib[bcrypt]
+python-jose[cryptography]
+httpx
+pydantic-settings
