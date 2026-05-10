@@ -1,16 +1,66 @@
-# PyCharm
+# IDE / 编辑器
 .idea/
+.vscode/
 *.iml
 *.ipr
 *.iws
 
-# 数据文件
-data/
+# 本地环境变量
+.env
+.env.*
+!.env.example
 
-# Python 缓存
+# Python 缓存与虚拟环境
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
 
-# 模型文件（训练后会生成）
+# Node / 前端构建
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 前端本地花卉图片素材
+frontend/public/plants/images/
+frontend/public/plants/*.jpg
+frontend/public/plants/*.jpeg
+frontend/public/plants/*.png
+frontend/public/plants/credits.json
+frontend/public/plants/review-needed.json
+
+# 后端本地数据
+backend/data/*.sqlite3
+backend/data/*.db
+backend/data/*.sqlite
+backend/data/*.sqlite3-*
+
+# 模型数据、训练产物与权重
+model_service/data/
+model_service/checkpoints/
+model_service/log/
 *.pth
 *.pt
+*.ckpt
+*.onnx
+
+# 临时文件与系统文件
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
+
+# 本地文档/大文件草稿
+*.pdf
